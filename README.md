@@ -147,41 +147,7 @@ The platform contains:
 
 ## 📊 Example Program
 
-```python
-import time
 
-def calculate_stats(numbers):
-    print("Processing numbers:", numbers)
-
-    total = sum(numbers)
-    count = len(numbers)
-    average = total / count if count > 0 else 0
-
-    return {
-        "count": count,
-        "sum": total,
-        "average": average,
-        "max": max(numbers) if numbers else None
-    }
-
-def main():
-    print("=== Welcome to Daddy AI ===")
-
-    user_data = [15, 42, 8, 99, 23, 67]
-
-    start_time = time.time()
-    results = calculate_stats(user_data)
-    elapsed = time.time() - start_time
-
-    print(f"Count: {results['count']}")
-    print(f"Sum: {results['sum']}")
-    print(f"Average: {results['average']:.2f}")
-    print(f"Max Value: {results['max']}")
-    print(f"Computation time: {elapsed:.4f}s")
-
-if __name__ == "__main__":
-    main()
-```
 
 ## 🎯 Project Goal
 
